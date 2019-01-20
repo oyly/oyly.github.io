@@ -18,11 +18,16 @@
     <meta name="description" content="">
     <meta name="author" content="oyly">
     <meta name="keywords" content="">
-    <title>Hexo</title>
+    <title>第一篇 ~ Hexo</title>
     <link rel="stylesheet" href="/css/Material_Icons.css">
     <!-- <link rel="stylesheet" href="/css/font-awesome.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    
+        <link rel="stylesheet" href="/css/post.css">
+        
+            <link rel="stylesheet" href="/css/Prettify/tomorrow-night-eighties.min.css">
+        
     
 </head>
 
@@ -76,10 +81,11 @@
     </div>
 </nav>
     
-  <div class="page-header header-filter" data-parallax="true" style="background-image: url('https://i.loli.net/2018/10/13/5bc1af44bb064.jpg')">
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../img/post-head.jpg')">
     
       <div class="container">
-        <h1 class="title text-center"></h1>
+        <h1 class="title text-center">第一篇</h1>
+        <p class="text-center"><b>星期日, 一月 20日 2019, 7:30 晚上</b></p>
       </div>
     
   </div>
@@ -88,27 +94,55 @@
   <div class="main main-raised">
     <div class="container">
       <div class="section">
-        <div class="row">
-    <div class="col-md-10 offset-md-1">
-        
-        <div class="row post-card">
-            
-            
-                <div class="col-md-11">
-                    <a href="/2019/01/20/第一篇/" class="h3 title">第一篇</a>
-                    <p></p>
-                    <p class="h6">
-                        <i class="material-icons">date_range</i>2019-01-20
-                        
-                    </p>
-                </div>
-            
-        </div>
-       
-         
-        <br><br>
         
 
+
+<div class="row">
+    <div class="col-md-7 offset-md-2">
+        <div class="post_content tocbot-content">
+            <p>继无限颓废之后，我开始找一些事做，这于我本身是有益的，虽然我并不知道这是不是又一个“半途而废”的作品，加引号是因为我所做的大多数事并没有做到一半就已经放弃。人于世上本来就是无意义的，在有限的生命中我不知道该如何度过，只能看看别人怎么做，这是一个学习的过程，而学习又是我的一件非常头疼的事，老师曾经说：“学习就是一件模仿的事。”我也非常赞同这句话，只是即使是模仿，好像也不是那么容易。我不知道怎么办。</p>
+
+        </div>
+        <br><br>
+        <div>
+            <p>
+                    
+            </p>
+        </div>
+    </div>
+    <!-- TOC -->
+    
+        <div class="col-md-3">
+            
+        </div>
+    
+</div>
+
+<!-- Comments -->
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+    
+        
+            <div class="disqus" style="width:100%">
+    <div id="disqus_thread"></div>
+    <script>               
+        var disqus_shortname = '';
+        var disqus_config = function () {
+            this.page.url = 'http://yoursite.com/2019/01/20/第一篇/'; 
+            this.page.identifier = '/2019/01/20/第一篇/';
+        };
+        (function() { 
+            var d = document, s = d.createElement('script');
+            s.type = 'text/javascript';
+            s.src = '//'+disqus_shortname+'.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>                                
+</div>
+        
+    
     </div>
 </div>
       </div>
@@ -132,6 +166,8 @@
 </footer>
       <!--   Core JS Files   -->
       <script src="/js/core/jquery.min.js"></script>
+      
+        <script src="/js/main.js"></script>
        
       <script src="/js/core/popper.min.js"></script>
       <script src="/js/core/bootstrap-material-design.min.js"></script>
@@ -143,6 +179,17 @@
       <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
       <script src="/js/material-kit.min.js?v=2.0.5"></script>
       
+      
+        <script src="/js/plugins/prettify.js"></script>
+        <script>
+            $(window).on('load',function(){
+                $('pre').addClass('prettyprint linenums');
+                prettyPrint();
+            })
+        </script>
+        
+          
+        
       
 </body>
 </html>
